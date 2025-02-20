@@ -1,5 +1,5 @@
 def get_claimbuster_results(text):
-  api_key = "1b027039d3394777afe80e6ce404a89f"
+  api_key = "api_key"
 
   # Define the endpoint (url) with the claim formatted as part of it, api-key (api-key is sent as an extra header)
   api_endpoint = f"https://idir.uta.edu/claimbuster/api/v2/score/text/{text}"
@@ -13,7 +13,7 @@ def get_claimbuster_results(text):
   return claim_buster_score
 
 def get_google_results(text):
-  API_KEY = "AIzaSyDU6__3oaTBgOo3998gvYnftkBOISQyu1E"
+  API_KEY = "api_key"
   url = f"https://factchecktools.googleapis.com/v1alpha1/claims:search?query={text}&key={API_KEY}"
 
   response = requests.get(url)
